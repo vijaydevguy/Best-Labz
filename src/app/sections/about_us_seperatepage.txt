@@ -1,0 +1,179 @@
+"use-client";
+import React from "react";
+import { FaArrowRight } from "react-icons/fa6";
+import Image from "next/image";
+
+import circleText from "../../assets/about_circle_text5.png";
+import text from "../../assets/about_text5.png";
+
+import erp from "../../assets/erp.png";
+import web from "../../assets/webdev.png";
+import pos from "../../assets/poseco.png";
+import crm from "../../assets/crm.png";
+
+import raicon from "../../assets/requirementicon.png";
+import uiuxicon from "../../assets/uiux.png";
+import devicon from "../../assets/development.png";
+import testicon from "../../assets/testing.png";
+import depicon from "../../assets/deployment.png";
+
+import bg1 from "../../assets/expertise_bg.png";
+import Navbar from "../sections/Navbar";
+import About from "../sections/About"; // Adjust the import path as necessary
+import Footer from "../sections/Footer";
+
+const services = [
+  {
+    title: "ERP websites",
+    description:
+      "Crafting flawless digital experiences that elevate your brand and captivate audiences.",
+    image: erp,
+  },
+  {
+    title: "Web development",
+    description:
+      "Crafting flawless digital experiences that elevate your brand and captivate audiences.",
+    image: web,
+  },
+  {
+    title: "POS Ecosystem",
+    description:
+      "Crafting flawless digital experiences that elevate your brand and captivate audiences.",
+    image: pos,
+  },
+  {
+    title: "CRM websites",
+    description:
+      "Crafting flawless digital experiences that elevate your brand and captivate audiences.",
+    image: crm,
+  },
+];
+const bottomFeatures = [
+  { title: "Requirement analysis", icon: raicon },
+  { title: "UI/UX Design", icon: uiuxicon },
+  { title: "Development", icon: devicon },
+  { title: "Testing", icon: testicon },
+  { title: "Deployment", icon: depicon },
+];
+
+const Expertise = () => {
+  return (
+    <>
+      <Navbar />
+      <div className="px-[5%]  relative overflow-y-clip overflow-x-clip mt-20">
+        {/* backgorund */}
+        <div className="absolute h-screen -z-10">
+          <Image src={bg1} alt="bg" className="h-full pointer-events-none" />
+        </div>
+
+        <div className="mb-10">
+          <div className="flex flex-col items-center justify-center pt-12">
+            <h2 className="text-center md:text-[48px] text-[32px] font-[jost] font-semibold ">
+              About us
+            </h2>
+            <p className="font-[outfit] md:text-[24px] text-[18px] text-[#777777]">
+              Explore the some of our finest work
+            </p>
+          </div>
+
+          <div className="relative flex items-center justify-center pt-6">
+            {/* Gradient Background */}
+            <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_center,_rgba(180,230,230,0.9),_transparent_30%)] "></div>
+            <div className="flex items-center lg:-ml-34 md:-ml-18 -ml-11 z-10">
+              <Image src={text} alt="text" className="pointer-events-none" />
+            </div>
+            <div className="flex items-center -z-10 lg:-ml-68 md:-ml-42 -ml-24">
+              <Image
+                src={circleText}
+                alt="circle_text"
+                className="min-w-380px] pointer-events-none"
+              />
+            </div>
+            
+          </div>
+        </div>
+
+        {/* About us page */}
+        <About />
+
+        {/* Main section */}
+        {/* backgorund */}
+        <div className="absolute h-screen -z-10">
+          <Image src={bg1} alt="bg" className="h-full pointer-events-none" />
+        </div>
+        <div>
+          <h2 className="text-center text-[48px] font-[jost] font-semibold pt-6">
+            We are expertise
+          </h2>
+
+          {services.map((service, index) => (
+            <div
+              key={index}
+              className="flex md:flex-row flex-col items-center gap-3 border-b-1 border-gray-200 pb-6"
+            >
+              <Image
+                src={service.image}
+                alt={service.title}
+                width={300}
+                className="pointer-events-none"
+              />
+              <div className="w-auto">
+                <h3 className="text-xl font-semibold text-gray-800">
+                  {service.title}
+                </h3>
+                <p className="text-gray-600 mb-2">{service.description}</p>
+              </div>
+
+              {/* <button
+              className="ml-auto bg-[#6966CF] text-white px-6 py-2 rounded-full 
+                                hover:bg-[#5D5AB5] transition relative flex items-center gap-2 
+                                shadow-[inset_-2px_-2px_4px_#5352E1,inset_-8px_-4px_5px_#4F4BD4,inset_-1px_-5px_4px_#5856A6]"
+            >
+              Get started now
+              <FaArrowRight className="text-white" />
+            </button> */}
+
+              <div className="w-full flex justify-end ">
+                <button
+                  className="bg-[#6966CF] text-white px-6 py-3  lg:px-3  w-[220px] rounded-full 
+                                hover:bg-[#5D5AB5] transition relative flex items-center justify-center gap-2 
+                                shadow-[inset_-2px_-2px_4px_#5352E1,inset_-8px_-4px_5px_#4F4BD4,inset_-1px_-5px_4px_#5856A6]w-[220px] text-[16px]"
+                >
+                  Get Started Now
+                  <FaArrowRight className="text-white" />
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* process */}
+        {/* backgorund */}
+        <div className="absolute h-screen -z-10">
+          <Image src={bg1} alt="bg" className="h-full pointer-events-none" />
+        </div>
+
+        <div className="mt-10 flex md:flex-row flex-col gap-10 justify-between pb-16 ">
+          {bottomFeatures.map((feature, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center text-gray-800 gap-2 justify-between"
+            >
+              <Image
+                src={feature.icon}
+                alt={feature.title}
+                width={150}
+                height={150}
+                className="pointer-events-none"
+              />
+              <p className="font-medium">{feature.title}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+      <Footer />
+    </>
+  );
+};
+
+export default Expertise;

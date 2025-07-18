@@ -1,0 +1,90 @@
+/* Jost */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Urbanist */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* outfit */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* prompt */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  @font-face {
+    font-family: "Kayak";
+    src: url("/public/fonts/Kayak Sans Bold (Italic).otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+}
+
+:root {
+  --background: #fbffff;
+  --foreground: #171717;
+}
+
+@font-face {
+  font-family: "MyFont";
+  src: url("/public/fonts/Kayak Sans Bold (Italic).otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MyFont";
+  src: url("/public/fonts/MyFont/Kayak\ Sans\ Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Poppins", "Jost", "Outfit", "Urbanist","Kayak", sans-serif;
+}
+
+@layer components {
+  .header {
+    @apply text-center lg:text-[64px] md:text-[48px] text-[32px] font-[jost] font-semibold;
+  }
+
+  .header-mob {
+    @apply text-center text-[32px] font-[jost] font-semibold;
+  }
+
+  .subhead {
+    @apply font-[outfit] lg:text-[26px] md:text-[24px] text-[18px] text-[#777777];
+  }
+
+  .subhead-mob {
+    @apply font-[outfit] text-[18px] text-[#777777];
+  }
+
+  .btn-primary {
+    @apply bg-[#6966CF] text-white px-6 py-3 w-[200px] rounded-full 
+    hover:bg-[#5D5AB5] transition-all duration-300 
+    flex items-center justify-center gap-2
+    shadow-[inset_-2px_-2px_4px_#5352E1,inset_-8px_-4px_5px_#4F4BD4,inset_-1px_-5px_4px_#5856A6];
+  }
+
+  .btn-secondary {
+    @apply text-[#6966CF] border-2 border-[#6966CF] px-6 py-3 w-[200px] rounded-full 
+    hover:bg-[#6966CF] hover:text-white hover:border-transparent
+    transition-all duration-300 flex items-center justify-center gap-2
+    group-hover:shadow-[inset_-2px_-2px_4px_#5352E1,inset_-8px_-4px_5px_#4F4BD4,inset_-1px_-5px_4px_#5856A6];
+  }
+
+  .arrow {
+    @apply transition-transform duration-300 rotate-0 lg:-rotate-[45deg] group-hover:rotate-0;
+  }
+}

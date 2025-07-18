@@ -87,7 +87,7 @@ export const metadata: Metadata = {
     title: "Best Labz - Global SaaS & IT Services Partner",
     description:
       "We provide enterprise-grade ERP, POS, and SaaS software solutions to clients across the globe. Cloud-native, scalable, and startup-friendly.",
-    url: "https://bestlabz.vercel.app",
+    url: "https://bestlabz.vercel.app/",
     siteName: "Best Labz",
     locale: "en_US",
     type: "website",

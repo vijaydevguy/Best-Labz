@@ -62,8 +62,11 @@ const prompt = Prompt({
 // };
 
 export const metadata: Metadata = {
+  // other: {
+  //   "google-site-verification": "ZHJDB_0qd46WSvlU8Obzw66H7JWwNa8gz0pzGryXa9c",
+  // },
   other: {
-    "google-site-verification": "ZHJDB_0qd46WSvlU8Obzw66H7JWwNa8gz0pzGryXa9c",
+    "google-site-verification": "ypKMkQ2-DDAjDZxUqJXSCKJl4tpCIleVb5ZWWZlApao",
   },
   title: {
     default: "Best Labz",
@@ -164,10 +167,13 @@ export default function RootLayout({
         {/* google site map */}
         {/* <meta name="og:google-site-verification" content="W4h3GeKXY1Y0qtw95n7Ero8qcdBszrvCpPI-GOI9G3U" /> */}
 
-        <meta
+        {/* <meta
           name="og:google-site-verification"
           content="ZHJDB_0qd46WSvlU8Obzw66H7JWwNa8gz0pzGryXa9c"
-        />
+        /> */}
+
+        {/* vercel site key */}
+        <meta name="google-site-verification" content="ypKMkQ2-DDAjDZxUqJXSCKJl4tpCIleVb5ZWWZlApao" />
 
         <link rel="canonical" href="https://bestlabz.vercel.app" />
         {/* seo */}

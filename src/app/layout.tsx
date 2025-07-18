@@ -84,7 +84,7 @@ export const metadata: Metadata = {
     title: "Best Labz - Global SaaS & IT Services Partner",
     description:
       "We provide enterprise-grade ERP, POS, and SaaS software solutions to clients across the globe. Cloud-native, scalable, and startup-friendly.",
-    url: "https://bestlabzglobal.com",
+    url: "https://bestlabz.vercel.app",
     siteName: "Best Labz",
     locale: "en_US",
     type: "website",
@@ -134,7 +134,7 @@ export default function RootLayout({
           content="Empowering businesses with innovative IT services and SAAS solutions."
         />
         <meta property="og:image" content="/src/assets/New Logo.png" />
-        <meta property="og:url" content="https://bestlabzglobal.com/" /> */}
+        <meta property="og:url" content="https://bestlabz.vercel.app/" /> */}
       <Head>
         <script
           type="application/ld+json"
@@ -144,16 +144,16 @@ export default function RootLayout({
                   "@context": "https://schema.org",
                   "@type": "Organization",
                   "name": "Best Labz",
-                  "url": "https://bestlabzglobal.com",
-                  "logo": "https://bestlabzglobal.com/assets/logo.png"
+                  "url": "https://bestlabz.vercel.app",
+                  "logo": "https://bestlabz.vercel.app/assets/logo.png"
                 },
                  {
                     "@context": "https://schema.org",
                     "@type": "WebSite",
-                    "url": "https://bestlabzglobal.com",
+                    "url": "https://bestlabz.vercel.app",
                     "potentialAction": {
                       "@type": "SearchAction",
-                      "target": "https://bestlabzglobal.com/search?q={search_term_string}",
+                      "target": "https://bestlabz.vercel.app/search?q={search_term_string}",
                       "query-input": "required name=search_term_string"
                     }
                   }
@@ -169,7 +169,7 @@ export default function RootLayout({
           content="ZHJDB_0qd46WSvlU8Obzw66H7JWwNa8gz0pzGryXa9c"
         />
 
-        <link rel="canonical" href="https://bestlabzglobal.com" />
+        <link rel="canonical" href="https://bestlabz.vercel.app" />
         {/* seo */}
         <link rel="icon" type="image/png" href="/src/assets/logo_1.png" />
         <meta charSet="UTF-8" />
@@ -196,7 +196,7 @@ export default function RootLayout({
           content="We provide enterprise-grade ERP, POS, and SaaS software solutions to clients across the globe. Cloud-native, scalable, and startup-friendly."
         />
         <meta property="og:image" content="/src/assets/logo_1.png" />
-        <meta property="og:url" content="https://bestlabzglobal.com" />
+        <meta property="og:url" content="https://bestlabz.vercel.app" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_US" />
 

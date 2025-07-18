@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: "Contact Best Labz – Start Your IT Journey",
     description:
       "Connect with the Best Labz team for SaaS, ERP, and IT service inquiries. Let’s build something great together.",
-    url: "https://bestlabzglobal.com/contact",
+    url: "https://bestlabz.vercel.app/contact",
     siteName: "Best Labz",
     locale: "en_US",
     type: "website",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     ],
   },
    alternates: {
-    canonical: "https://bestlabzglobal.com/contact",
+    canonical: "https://bestlabz.vercel.app/contact",
   },
 };
 const page = () => {

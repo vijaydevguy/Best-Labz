@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://bestlabzglobal.com
+Host: https://bestlabz.vercel.app
 
 # Sitemaps
-Sitemap: https://bestlabzglobal.com/sitemap.xml
+Sitemap: https://bestlabz.vercel.app/sitemap.xml

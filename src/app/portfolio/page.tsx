@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: "Our Work – Best Labz Portfolio",
     description:
       "See how Best Labz delivers powerful SaaS, ERP, POS, and mobile solutions to businesses worldwide. Real results. Real impact.",
-    url: "https://bestlabzglobal.com/portfolio",
+    url: "https://bestlabz.vercel.app/portfolio",
     siteName: "Best Labz",
     locale: "en_US",
     type: "website",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: "https://bestlabzglobal.com/portfolio",
+    canonical: "https://bestlabz.vercel.app/portfolio",
   },
 };
 

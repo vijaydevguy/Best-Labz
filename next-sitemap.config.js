@@ -4,7 +4,8 @@ module.exports = {
   generateRobotsTxt: true,            // ✅ Will create /robots.txt
   generateIndexSitemap: true,
   sitemapSize: 5000,
-  outDir: './out',
+  // outDir: './out',
+  outDir: './public', // ✅ Put sitemap files in public folder
 }
 
 
